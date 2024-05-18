@@ -8,7 +8,7 @@ import {fadeIn,textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
 const EducationCard = ({ index, title, school_name, icon, date, percentage, stream, link }) => (
-    <motion.div variants={fadeIn("left", "spring",0.5*index, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring",0.5*index, 0.75)}>
         <Tilt
             options={{
                 max: 45,

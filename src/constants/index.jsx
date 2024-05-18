@@ -281,7 +281,7 @@ import {
     {
       name: "DishNary",
       description:
-        "Group project of a native mobile app facilitating dish searches, displaying recipes, ingredients, methods, and instructional videos for user convenience.",
+        "Group project of a native mobile app facilitating dish searches, displaying recipes and much more.",
       tags: [
         {
           name: "reactNative",
