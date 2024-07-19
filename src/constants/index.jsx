@@ -1,5 +1,7 @@
 import {
+    travarsa,
     mvm,
+    nextjs,
     prag,
     meenaxi,
     soumya,
@@ -74,6 +76,12 @@ import {
   ];
   
   const technologies = [
+
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
+
     {
       name: "HTML 5",
       icon: html,
@@ -144,13 +152,28 @@ import {
       school_name:"Amity University, Kolkata",
       icon:amity,
       date:"Sept 2022",
-      percentage:"CGPA - 9.50",
+      percentage:"CGPA - 9.43",
       stream:"IT",
       link:"https://www.amity.edu/kolkata/",
     }
   ]
   
   const experiences = [
+
+    {
+      title: "Web Developer Intern",
+      company_name: "Travarsa Private Limited",
+      icon: travarsa,
+      iconBg: "#383E56",
+      date: "June 2023 - Aug 2023",
+      points: [
+        "Developed and maintained responsive websites and web applications for clients using HTML, CSS, and JavaScript and libraries such as React and Nextjs.",
+        "Collaborated with the design team to create user-friendly interfaces and optimize user experience in many personal projects.",
+        "Ensured cross-browser compatibility and responsiveness of all web applications.",
+        "Conducted code reviews, presentations and provided feedback to improve code quality and efficiency.",
+      ],
+    },
+
     {
       title: "IT Club Member",
       company_name: "Amity University, Kolkata",
@@ -232,6 +255,31 @@ import {
   ];
   
   const projects = [
+
+    {
+      name: "CoTo",
+      description:
+        "An online collaborative code editor for html,css,js, enabling real-time collaboration and seamless code sharing.",
+      tags: [
+        {
+          name: "reactJs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "socketIO",
+          color: "green-text-gradient",
+        },
+        {
+          name: "expressJs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: coto,
+      icon:live,
+      source_code_link: "https://github.com/AnirbanSinha27/CoTo",
+      live_link:"https://coto-urwt.onrender.com/",
+    },
+
     {
       name: "WeWatch",
       description:
@@ -279,16 +327,16 @@ import {
       live_link: "https://anirbansinha.netlify.app",
     },
     {
-      name: "DishNary",
+      name: "TeeKraft",
       description:
-        "Group project of a native mobile app facilitating dish searches, displaying recipes and much more.",
+        "3D T-shirt customizer allowing users to change colours, textures, and add custom logo designs.",
       tags: [
         {
-          name: "reactNative",
+          name: "reactJs",
           color: "blue-text-gradient",
         },
         {
-          name: "appwrite",
+          name: "threeJs",
           color: "green-text-gradient",
         },
         {
@@ -296,10 +344,10 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: dishnary,
+      image: teekraft,
       icon:live,
-      source_code_link: "https://github.com/AnirbanSinha27/recepie",
-      live_link:"#",
+      source_code_link: "https://github.com/AnirbanSinha27/TeeKraft",
+      live_link:"https://teekraft.netlify.app",
     },
   ];
   

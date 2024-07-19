@@ -13,6 +13,10 @@ import suvodip from "./suvodip.jpg"
 import soumya from "./soumya.jpg"
 import prag from "./prag.png"
 import mvm from "./mvm.png"
+import travarsa from "./travarsa.png"
+import nextjs from "./nextjs.png";
+import coto from "./coto.png";
+import teekraft from "./teekraft.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -50,6 +54,7 @@ import wewatch from "./wewatch.png";
 import portfolio from "./portfolio.png";
 
 export {
+  travarsa,
   meenaxi,
   soumya,
   suvodip,
@@ -59,6 +64,8 @@ export {
   dishnary,
   research,
   cpp,
+  coto,
+  teekraft,
   java,
   python,
   mui,
@@ -73,6 +80,7 @@ export {
   github,
   menu,
   close,
+  nextjs,
   css,
   docker,
   figma,
