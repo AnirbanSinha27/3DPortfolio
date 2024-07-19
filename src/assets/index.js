@@ -13,7 +13,7 @@ import suvodip from "./suvodip.jpg"
 import soumya from "./soumya.jpg"
 import prag from "./prag.png"
 import mvm from "./mvm.png"
-import travarsa from "./travarsa.png"
+import travarsa from "./company/travarsa.png";
 import nextjs from "./nextjs.png";
 import coto from "./coto.png";
 import teekraft from "./teekraft.png";
