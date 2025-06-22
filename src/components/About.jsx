@@ -37,7 +37,7 @@ const About = () => {
 
       <motion.p variants={fadeIn("","",0.1,1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I am a dedicated frontend developer with expertise in HTML, CSS, JavaScript and frameworks like ReactJS and ThreeJS. I excel in creating responsive and dynamic user interfaces and have a strong foundation in data structures and algorithms in C++, enhancing my problem-solving abilities. I stay updated with modern technologies and continuously seek to improve my skills. Feel free to explore my work and reach out for collaboration opportunities.
+        I am a dedicated frontend developer with expertise in HTML, CSS, JavaScript and frameworks like NextJS, ReactJS and ThreeJS. I excel in creating responsive and dynamic user interfaces and have a strong foundation in data structures and algorithms in C++, enhancing my problem-solving abilities. I stay updated with modern technologies and continuously seek to improve my skills. Feel free to explore my work and reach out for collaboration opportunities.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

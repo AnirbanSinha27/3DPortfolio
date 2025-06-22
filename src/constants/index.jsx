@@ -1,6 +1,9 @@
 import {
+    devfrend,
     travarsa,
     mvm,
+    doxlive,
+    zephyr,
     nextjs,
     prag,
     meenaxi,
@@ -64,7 +67,7 @@ import {
       icon: web,
     },
     {
-      title: "React Js Development",
+      title: "Next Js Development",
       icon: mobile,
     },
     {
@@ -131,14 +134,15 @@ import {
   ];
 
   const educations=[
+    
     {
-      title:"CBSE X Board Examination",
-      school_name:"Pragjyotish Sr. Sec. School, Guwahati",
-      icon:prag,
-      date:"May 2020",
-      percentage:"97.0%",
-      stream:"Science",
-      link:"https://www.pragjyotishschool.in/",
+      title:"Bachelor's of Computer Applications",
+      school_name:"Amity University, Kolkata",
+      icon:amity,
+      date:"Sept 2022",
+      percentage:"CGPA - 9.40",
+      stream:"IT",
+      link:"https://www.amity.edu/kolkata/",
     },
     {
       title:"CBSE XII Board Examination",
@@ -148,19 +152,34 @@ import {
       date:"June 2022",
       percentage:"95.4%",
       link:"https://mvmguwahati-4.org/",
-    },
-    {
-      title:"Bachelor's of Computer Applications",
-      school_name:"Amity University, Kolkata",
-      icon:amity,
-      date:"Sept 2022",
-      percentage:"CGPA - 9.43",
-      stream:"IT",
-      link:"https://www.amity.edu/kolkata/",
+    },{
+      title:"CBSE X Board Examination",
+      school_name:"Pragjyotish Sr. Sec. School, Guwahati",
+      icon:prag,
+      date:"May 2020",
+      percentage:"97.0%",
+      stream:"Science",
+      link:"https://www.pragjyotishschool.in/",
     }
   ]
   
   const experiences = [
+
+    {
+  title: "Frontend Developer Intern",
+  company_name: "Devfrend Web Solutions",
+  icon: devfrend, // Replace with your actual imported icon
+  iconBg: "#1F2937", // Tailwind dark blue-gray or any preferred color
+  date: "May 2025 - Present",
+  points: [
+    "Developing and maintaining responsive business websites using Next.js, TailwindCSS, JavaScript, and ShadCN UI components.",
+    "Utilizing Framer Motion to implement smooth animations and modern UI interactions across multiple projects.",
+    "Collaborating with cross-functional teams to create impactful user experiences for clients in various sectors including salons, cafes, and fitness centers.",
+    "Contributing to the company's mission of transforming businesses into customer magnets through optimized digital presence and sales-focused web design.",
+    "Working closely with the development department to deliver scalable, SEO-friendly, and performance-optimized web solutions for clients."
+  ],
+},
+
 
     {
       title: "Web Developer Intern",
@@ -257,6 +276,62 @@ import {
   ];
   
   const projects = [
+
+    {
+  name: "Zephyr",
+  description:
+    "Modern e-commerce website built using Next.js 14 and Sanity CMS with Razorpay integration, featuring clean UI and local state management via React context.",
+  tags: [
+    {
+      name: "nextJs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "sanity",
+      color: "green-text-gradient",
+    },
+    {
+      name: "razorpay",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "tailwindCss",
+      color: "blue-text-gradient",
+    },
+  ],
+  image: zephyr, // replace with actual imported image reference
+  icon: live,     // or another icon you use for hosted projects
+  source_code_link: "https://github.com/AnirbanSinha27/Zephyr",
+  live_link: "https://zephyr-lovat.vercel.app/",
+},
+{
+  name: "DoxLive",
+  description:
+    "Real-time collaborative document editor with features like document management, active presence, comments, and notifications — built using Liveblocks and Next.js.",
+  tags: [
+    {
+      name: "nextJs",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "liveblocks",
+      color: "green-text-gradient",
+    },
+    {
+      name: "tailwindCss",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "shadcn",
+      color: "blue-text-gradient",
+    },
+  ],
+  image: doxlive, // replace with actual imported image reference
+  icon: live,
+  source_code_link: "https://github.com/AnirbanSinha27/DoxLive",
+  live_link: "https://doxlive-me62lzaqn-anirban-sinhas-projects.vercel.app/",
+},
+
 
     {
       name: "CoTo",

@@ -17,6 +17,9 @@ import travarsa from "./company/travarsa.png";
 import nextjs from "./nextjs.png";
 import coto from "./coto.png";
 import teekraft from "./teekraft.png";
+import zephyr from "./tech/zephyr"
+import doxlive from "./tech/doxlive"
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -45,6 +48,7 @@ import amity from './company/amity.png';
 import sih from './company/sih.png';
 import coding from "./company/coding.png";
 import research from "./company/research.png";
+import devfrend from "./company/devfrend.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -54,6 +58,9 @@ import wewatch from "./wewatch.png";
 import portfolio from "./portfolio.png";
 
 export {
+  devfrend,
+  doxlive,
+  zephyr,
   travarsa,
   meenaxi,
   soumya,
