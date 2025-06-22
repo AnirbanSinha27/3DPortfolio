@@ -17,8 +17,8 @@ import travarsa from "./company/travarsa.png";
 import nextjs from "./nextjs.png";
 import coto from "./coto.png";
 import teekraft from "./teekraft.png";
-import zephyr from "./tech/zephyr"
-import doxlive from "./tech/doxlive"
+import zephyr from "./tech/zephyr.png"
+import doxlive from "./tech/doxlive.png"
 
 
 import css from "./tech/css.png";
