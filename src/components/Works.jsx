@@ -1,5 +1,5 @@
 import React from "react";
-import {Tilt} from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -8,30 +8,59 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
-const ProjectCard=({index,name,description,tags,image,source_code_link,icon,live_link})=>(
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  icon,
+  live_link,
+}) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
     <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[340px] h-[480px]'
-      >
-      <div className="relative w-full h-[230px]"> 
-        <img src={image} 
-        alt={name}
-        className="w-full h-full object-cover rounded-2xl" />
-        
+      options={{
+        max: 45,
+        scale: 1,
+        speed: 450,
+      }}
+      className="bg-tertiary p-5 rounded-2xl sm:w-[340px] h-[480px]"
+    >
+      <div className="relative w-full h-[230px]">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover rounded-2xl"
+        />
+
         <div className="absolute inset-0 flex justify-end m-3 gap-2">
-          <Link to={source_code_link} className="black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer">
-            <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
+          <Link
+            to={source_code_link}
+            className="black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+          >
+            <img
+              src={github}
+              alt="github"
+              className="w-1/2 h-1/2 object-contain"
+            />
           </Link>
-          <Link to={live_link} className="black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer">
-            <img src={icon} alt="icon" className="w-1/2 h-1/2 object-contain" />
+          <Link
+            to={live_link}
+            className="black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+          >
+            <img
+              src={icon}
+              alt="icon"
+              className="w-1/2 h-1/2 object-contain"
+            />
           </Link>
         </div>
-        
       </div>
 
       <div className="mt-5">
@@ -40,16 +69,15 @@ const ProjectCard=({index,name,description,tags,image,source_code_link,icon,live
       </div>
 
       <div className="mt-4 gap-2 flex flex-wrap">
-        {tags.map((tag)=>(
+        {tags.map((tag) => (
           <p key={tag.name} className={`text-[14px] ${tag.color}`}>
             #{tag.name}
           </p>
         ))}
       </div>
-
     </Tilt>
   </motion.div>
-)
+);
 
 const Works = () => {
   return (
@@ -58,25 +86,44 @@ const Works = () => {
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
-      <div className='w-full flex'>
+
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
+          Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          links to code repositories and live demos. They reflect my ability to
+          solve complex problems, work with different technologies, and manage
+          projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project,index)=>(
-          <ProjectCard key={index} index={index} {...project}/>
-        ))}
+
+      <div className="mt-20 px-6">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          spaceBetween={30}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              <ProjectCard index={index} {...project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Works,"")
+export default SectionWrapper(Works, "");
