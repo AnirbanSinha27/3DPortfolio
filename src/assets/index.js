@@ -19,6 +19,8 @@ import coto from "./coto.png";
 import teekraft from "./teekraft.png";
 import zephyr from "./tech/zephyr.png"
 import doxlive from "./tech/doxlive.png"
+import amar from "./amar.png"
+import shammi from "./shammi.png"
 
 
 import css from "./tech/css.png";
@@ -84,6 +86,8 @@ export {
   creator,
   mobile,
   web,
+  shammi,
+  amar,
   github,
   menu,
   close,

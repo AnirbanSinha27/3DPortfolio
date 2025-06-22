@@ -4,6 +4,8 @@ import {
     mvm,
     doxlive,
     zephyr,
+    amar,
+    shammi,
     nextjs,
     prag,
     meenaxi,
@@ -250,6 +252,23 @@ import {
   
   const testimonials = [
     {
+  testimonial:
+    "Anirban is a great team leader and works on his tasks with high concentration.",
+  name: "Amar Gupta",
+  designation: "Founder",
+  company: "Devfrend Web Solutions",
+  image: amar, // Replace with the imported image for Amar Gupta
+},
+{
+  testimonial:
+    "Anirban is a quick learner and undoubtedly better than average developers right now.",
+  name: "Shammi Viren",
+  designation: "Director",
+  company: "Travarsa Private Limited",
+  image: shammi, // Replace with the imported image for Shammi Viren
+}
+,
+    {
       testimonial:
         "Anirban led the team in a great manner, a good team player.",
       name: "Suvodip Banjerjee",
@@ -320,10 +339,6 @@ import {
     {
       name: "tailwindCss",
       color: "pink-text-gradient",
-    },
-    {
-      name: "shadcn",
-      color: "blue-text-gradient",
     },
   ],
   image: doxlive, // replace with actual imported image reference
