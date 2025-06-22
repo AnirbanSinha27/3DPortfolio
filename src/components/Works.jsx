@@ -104,7 +104,10 @@ const Works = () => {
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+            el: ".custom-swiper-pagination",
+          }}
           spaceBetween={30}
           breakpoints={{
             0: {
@@ -121,6 +124,9 @@ const Works = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* 👇 Pagination will appear here below the carousel */}
+        <div className="custom-swiper-pagination flex justify-center mt-6 gap-2" />
       </div>
     </>
   );
